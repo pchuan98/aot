@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+		<!-- Package metadata -->
+		<PackageId>AotCrossCompile</PackageId>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Authors>Your Name</Authors>
+		<Description>MSBuild targets for cross-platform AOT compilation with Native AOT support</Description>
+		<PackageTags>aot nativeaot crosscompile msbuild targets</PackageTags>
+		<PackageProjectUrl>https://github.com/yourusername/aot-crosscompile</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/yourusername/aot-crosscompile</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- MSBuild targets -->
+		<Content Include="PublishAotCross.targets">
+			<PackagePath>build\AotCrossCompile.targets</PackagePath>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="Crosscompile.targets">
+			<PackagePath>build\Crosscompile.targets</PackagePath>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="clang.cmd">
+			<PackagePath>build\clang.cmd</PackagePath>
+			<Pack>true</Pack>
+		</Content>
+
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+	</ItemGroup>
+
+</Project>

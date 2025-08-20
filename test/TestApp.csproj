@@ -13,4 +13,8 @@
 		<PackageReference Include="AotCrossCompile" Version="1.0.0" />
 	</ItemGroup>
 
+	<Target Name="BuildAotPackage" BeforeTargets="PreBuildEvent">
+		<Exec Command="$(ProjectDir)..\\targets\\build.bat" ContinueOnError="false" />
+	</Target>
+
 </Project>
