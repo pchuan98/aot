@@ -10,11 +10,11 @@
 		<!-- Package metadata -->
 		<PackageId>AotCrossCompile</PackageId>
 		<PackageVersion>1.0.0</PackageVersion>
-		<Authors>Your Name</Authors>
+		<Authors>pchuan98</Authors>
 		<Description>MSBuild targets for cross-platform AOT compilation with Native AOT support</Description>
 		<PackageTags>aot nativeaot crosscompile msbuild targets</PackageTags>
-		<PackageProjectUrl>https://github.com/yourusername/aot-crosscompile</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/yourusername/aot-crosscompile</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/pchuan98/aot</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/pchuan98/aot</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
