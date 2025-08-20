@@ -1,0 +1,28 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!-- Only Windows host targeting Linux is currently supported -->
+	<Import Project="Crosscompile.targets" Condition="$(RuntimeIdentifier.Contains('linux')) and $([MSBuild]::IsOSPlatform('Windows'))" />
+
+	<!--remove debug symbol files-->
+	<Target Name="CleanupPublishOutput" AfterTargets="Publish" Condition="'$(Configuration)' == 'Release'">
+		<ItemGroup>
+			<FilesToCleanup Include="$(PublishDir)**/*.dbg;$(PublishDir)**/*.pdb" />
+		</ItemGroup>
+		<Delete Files="@(FilesToCleanup)" ContinueOnError="true" />
+		<Message Text="清除调试文件" Importance="high" />
+	</Target>
+
+	<PropertyGroup>
+		<DebugType>portable</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<DebugType>None</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<PublishAot>true</PublishAot>
+		<SelfContained>true</SelfContained>
+		<AvaloniaCompileXaml>true</AvaloniaCompileXaml>
+		<StripSymbols>true</StripSymbols>
+	</PropertyGroup>
+
+</Project>

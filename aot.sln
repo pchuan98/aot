@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "test\TestApp.csproj", "{023E289F-F484-F82B-DFC8-5159A2B41408}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{BBD3DA59-949E-DE27-B4B0-19AAD67562FF}"
+	ProjectSection(SolutionItems) = preProject
+		targets\aot.nuspec = targets\aot.nuspec
+		targets\clang.cmd = targets\clang.cmd
+		targets\Crosscompile.targets = targets\Crosscompile.targets
+		targets\PublishAotCross.targets = targets\PublishAotCross.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{023E289F-F484-F82B-DFC8-5159A2B41408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023E289F-F484-F82B-DFC8-5159A2B41408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023E289F-F484-F82B-DFC8-5159A2B41408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023E289F-F484-F82B-DFC8-5159A2B41408}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D0E4554-87A3-49A3-BD6A-9B3D2613E148}
+	EndGlobalSection
+EndGlobal

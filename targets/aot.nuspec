@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>AotCrossCompile</id>
+    <version>1.0.0</version>
+    <authors>Your Name</authors>
+    <description>MSBuild targets for cross-platform AOT compilation with Native AOT support</description>
+    <tags>aot nativeaot crosscompile msbuild targets</tags>
+    <projectUrl>https://github.com/yourusername/aot-crosscompile</projectUrl>
+    <repository type="git" url="https://github.com/yourusername/aot-crosscompile" />
+    <license type="file">LICENSE</license>
+    <readme>README.md</readme>
+  </metadata>
+  <files>
+    <!-- MSBuild targets -->
+    <file src="targets\PublishAotCross.targets" target="build\AotCrossCompile.targets" />
+    <file src="targets\Crosscompile.targets" target="build\Crosscompile.targets" />
+    <file src="targets\clang.cmd" target="build\clang.cmd" />
+
+    <!-- Documentation -->
+    <file src="LICENSE" target="" />
+    <file src="README.md" target="" />
+  </files>
+</package>
