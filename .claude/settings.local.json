@@ -7,7 +7,12 @@
       "Bash(dotnet restore:*)",
       "Bash(dotnet build)",
       "Bash(dotnet run)",
-      "Bash(dotnet publish:*)"
+      "Bash(dotnet publish:*)",
+      "Bash(rm:*)",
+      "Bash(dir:*)",
+      "Bash(.build.bat)",
+      "Bash(./build.bat)",
+      "Bash(cp:*)"
     ],
     "deny": [],
     "ask": []

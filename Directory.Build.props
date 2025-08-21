@@ -1,0 +1,8 @@
+<Project>
+	<!--通用必备配置-->
+  <PropertyGroup>
+		<PublishAot>true</PublishAot>
+		<SelfContained>true</SelfContained>
+	</PropertyGroup>
+
+</Project>

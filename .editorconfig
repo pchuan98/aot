@@ -4,6 +4,9 @@ root = true
 [*.csproj]
 indent_size = 2
 
+[*.props]
+indent_size = 2
+
 [*.nuspec]
 indent_size = 2
 
